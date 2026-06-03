@@ -79,3 +79,17 @@ if build_barchart:
         title='Average Price by Vehicle Type'
     )
     st.plotly_chart(visual3)
+
+st.subheader('Scatter Plot of Price vs Odometer Reading')
+build_scatter = st.checkbox('Select to Build Scatter Plot')
+if build_scatter:
+    scatter_plot = px.scatter(
+        filter_df,
+        x='odometer',
+        y='price',
+        color='condition',
+        hover_data=['model', 'model_year'],
+        trendline='ols',
+        title='Vehicle Price vs Odometer Reading')
+
+    st.plotly_chart(scatter_plot)
