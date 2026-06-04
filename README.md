@@ -27,6 +27,10 @@ The application uses a dataset containing vehicle listings, including informatio
 * Odometer
 * Vehicle type
 * Condition
+  
+## How to Run using the URL
+Use the following link
+https://app-sprint7-vehicles.onrender.com
 
 ## How to Run Locally
 
